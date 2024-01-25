@@ -13,7 +13,8 @@ const Home = () => {
     setDarkMode((prevDarkMode) => !prevDarkMode);
   }
   return (
-    <>
+      <>
+    
       <NavBar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Hero darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Skills darkMode={darkMode} toggleDarkMode={toggleDarkMode} />

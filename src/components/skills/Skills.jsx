@@ -10,6 +10,12 @@ import {
   SiTailwindcss,
   SiMongodb,
   SiExpress,
+  SiPostgresql,
+  SiJava,
+  SiSpring,
+  SiAmazonaws,
+  SiFirebase,
+  SiFlutter,
 } from "react-icons/si";
 import { GrCode } from "react-icons/gr";
 import { SiNextdotjs } from "react-icons/si";
@@ -22,7 +28,7 @@ const Skills = ({ darkMode }) => {
       <div className=" container m-auto  mt-16">
         {/* heading */}
         <div data-aos="fade-up" className="relative mb-5">
-          <h3 className=" text-3xl font-black text-gray-400 sm:text-2xl">
+          <h3 className=" text-3xl font-black text-indigo-500 sm:text-2xl">
             My Skills
           </h3>
           <span className="h-[1.1px] right-0 absolute w-[90%] bg-gray-300 block"></span>
@@ -32,7 +38,7 @@ const Skills = ({ darkMode }) => {
           <div className="left flex-1 w-full">
             <p
               data-aos="fade-up"
-              className=" text-gray-700 font-medium w-[100%]"
+              className=" text-gray-100 font-medium w-[100%]"
             >
               Here are my skills.
             </p>
@@ -41,7 +47,7 @@ const Skills = ({ darkMode }) => {
               data-aos="zoom-in"
               className="progress flex items-center h-[100%] justify-end md:justify-center"
             >
-              <div className=" flex flex-col gap-6  w-3/4  my-5 md:w-[90%]">
+              <div className="flex text-white flex-col gap-6  w-3/4  my-5 md:w-[90%]">
                 <ProgressBar logo={<IoLogoHtml5 />} name={"HTML"} value={95} />
                 <ProgressBar logo={<IoLogoCss3 />} name={"CSS"} value={88} />
                 <ProgressBar
@@ -53,7 +59,22 @@ const Skills = ({ darkMode }) => {
                 <ProgressBar
                   logo={<SiTailwindcss />}
                   name={"Tailwind CSS"}
-                  value={80}
+                  value={70}
+                />
+                 <ProgressBar
+                  logo={<SiAmazonaws />}
+                  name={"Amazon AWS"}
+                  value={65}
+                />
+                <ProgressBar
+                  logo={<SiFirebase />}
+                  name={"Firebase"}
+                  value={75}
+                />
+                <ProgressBar
+                  logo={<SiFlutter />}
+                  name={"Flutter"}
+                  value={65}
                 />
               </div>
             </div>
@@ -61,6 +82,12 @@ const Skills = ({ darkMode }) => {
           {/* right box */}
           <div className="right relative flex-1 flex flex-wrap p-5 gap-10 items-center justify-center sm:w-full">
             <div className="first2 flex flex-col gap-10">
+            <SkillBox
+                logo={<SiSpring />}
+                black={"white"}
+                white={"black"}
+                skill={"Spring Boot"}
+              />
               <SkillBox
                 logo={<IoLogoNodejs />}
                 black={"white"}
@@ -68,29 +95,20 @@ const Skills = ({ darkMode }) => {
                 skill={"Node Js"}
               />
               <SkillBox
-                logo={<SiMongodb />}
+                logo={<SiPostgresql />}
                 black={"white"}
                 white={"black"}
-                skill={"MongoDB"}
+                skill={"PostgreSQL"}
               />
             </div>
             <div className="last2 flex flex-col gap-10">
               <SkillBox
-                logo={<SiExpress />}
+                logo={<SiJava />}
                 black={"black"}
                 white={"white"}
-                skill={"Express Js"}
+                skill={"Java"}
               />
-              <SkillBox
-                className=""
-                logo={
-                  <GrCode/>
-                }
-                black={"black"}
-                white={"white"}
-                skill={"C++"}
-              />
-              {/* <SkillBox
+              {<SkillBox
                 className=""
                 logo={
                   <SiNextdotjs className=" text-white bg-black rounded-full h-fit border-white overflow-hidden" />
@@ -98,7 +116,17 @@ const Skills = ({ darkMode }) => {
                 black={"black"}
                 white={"white"}
                 skill={"Next Js"}
-              /> */}
+              /> }
+              <SkillBox
+                className=""
+                logo={
+                  <SiMongodb/>
+                }
+                black={"black"}
+                white={"white"}
+                skill={"MongoDB"}
+              />
+              
             </div>
           </div>
         </div>

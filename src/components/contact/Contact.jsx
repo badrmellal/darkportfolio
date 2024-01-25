@@ -1,15 +1,55 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { RiSendPlaneFill } from "react-icons/ri";
 
+
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    email : '',
+    username : '',
+    message : '',
+  });
+
+  const handleInputChange = (event) => {
+    const {name,value} = event.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    })
+  }
+
+  const handleSubmit = async (e)=> {
+    e.preventDefault();
+    const formEndpoint = 'https://formspree.io/f/xyyrglje';
+
+    try {
+      const response = await fetch(formEndpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ formData }),
+      });
+
+      if (response.ok) {
+        // Form submitted successfully
+        console.log('Form submitted successfully');
+      } else {
+        // Form submission error
+        console.error('Form submission failed');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    }
+  };
+
   return (
     <div id="contact" className="container m-auto mt-16">
       {/* heading */}
       <div 
-      // data-aos="fade-up"
+       data-aos="fade-up"
        className="relative mb-5">
-        <h3 className=" text-3xl font-black text-gray-400 sm:text-2xl">
+        <h3 className=" text-3xl font-black text-indigo-500 sm:text-2xl">
           Contact
         </h3>
         <span className="h-[1.1px] right-0 absolute w-[92%] bg-gray-300 block"></span>
@@ -22,9 +62,9 @@ const Contact = () => {
             <div 
             data-aos="zoom-in"
             >
-              <h1 className="text-5xl font-bold sm:text-3xl">You Need</h1>
-              <h3 className="text-xl sm:text-lg">
-                Beautiful design for your website leave a request
+              <h1 className="text-5xl text-white font-bold sm:text-3xl">You Need</h1>
+              <h3 className="text-xl text-indigo-300  sm:text-lg">
+                A web or mobile app leave a request here, it's FREE
               </h3>
             </div>
           </div>
@@ -33,9 +73,9 @@ const Contact = () => {
               
               data-aos="zoom-in"
               
-              className= " text-yellow-500 font-extrabold text-3xl p-2 rounded-lg shadow-[0_0_10px_1px_rgba(0,0,0,0.1)] "
+              className= " text-indigo-400 font-extrabold text-3xl p-2 rounded-lg shadow-[0 0 10px 1px rgba(255, 255, 255, 0.1)] "
             >
-              <BsArrowRight className=" md:rotate-90" />
+              <BsArrowRight className="transform md:rotate-0 group hover:rotate-180 transition-transform duration-300 ease-in-out cursor-pointer" />
             </button>
           </div>
         </div>
@@ -45,30 +85,37 @@ const Contact = () => {
             data-aos="zoom-in"
             
             className="flex justify-center items-center flex-col gap-5 w-[70%] md:w-[100%] sm:w-[95%] mx-auto"
-            action="mailto:xyz@gmail.com"
+            action="mailto:contact.moddy@gmail.com"
+            onSubmit={handleSubmit}
           >
             <input
               className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
               type="email"
               placeholder="e.g. example@email.com"
-              name=""
+              value={formData.email}
+              onChange={handleInputChange}
+              name="email"
             />
             <input
               className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
               type="text"
-              placeholder="e.g. John Doe"
-              name=""
+              placeholder="e.g. Username"
+              value={formData.username}
+              onChange={handleInputChange}
+              name="username"
             />
             <textarea
               className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
               rows="4"
               cols="50"
-              placeholder="Write your message"
-              name=""
+              placeholder="Write your message here..."
+              value={formData.message}
+              onChange={handleInputChange}
+              name="message"
               id=""
             />
             <button
-              className="bg-yellow-500 w-full text-white font-semibold  p-2 rounded-lg flex items-center justify-center space-x-1"
+              className="bg-indigo-500 hover:bg-indigo-600 w-full text-white font-semibold  p-2 rounded-lg flex items-center justify-center space-x-1"
               type="submit"
             >
               <span>Send</span>

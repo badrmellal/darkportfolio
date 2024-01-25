@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const ProgressBar = ({ logo, name, value, duration = 3 }) => {
+
   return (
     <div className="flex flex-col gap-2 sm:gap-1 text-xl font-semibold ">
       <div className="flex justify-between">
@@ -12,9 +13,9 @@ const ProgressBar = ({ logo, name, value, duration = 3 }) => {
           {value}%
         </span> */}
       </div>
-      <div className="h-[8px] w-[100%] relative rounded-3xl bg-gray-300">
+      <div className="h-[8px] w-[100%] relative rounded-3xl bg-gray-100">
         <Progress
-          className="w-[0%] h-[8px] absolute rounded-3xl bg-yellow-500"
+          className="w-[0%] h-[8px] absolute rounded-3xl bg-indigo-500"
           style={{
             width: `${value}%`,
             animation: `progress-animation ${duration}s linear`,
