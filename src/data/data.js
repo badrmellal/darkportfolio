@@ -12,8 +12,8 @@ export const data = [
   {
     id: 2,
     img: 'https://i.postimg.cc/XqbJMQFy/Screen-Shot-2024-01-25-at-9-58-42-AM.png',
-    title: "Tarvel App",
-    link: "https://destinia-plan-gluzio.flutterflow.app",
+    title: "Tracker App",
+    link: "https://badrmellal-todos.netlify.app",
     git: "",
   },
   {
