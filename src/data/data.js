@@ -21,7 +21,7 @@ export const data = [
     img: 'https://i.postimg.cc/D0mNwgnx/Screen-Shot-2024-01-25-at-9-44-48-AM.png',
     title: "FamiliaPlan",
     desc: "",
-    link: "https://familia-plan-1vq7ko.flutterflow.app",
+    link: "https://familiaplan.vercel.app/",
     git: "",
   }
   
