@@ -35,21 +35,22 @@ const Resume = () => {
               {/* design */}
               <div className=" flex flex-col gap-1 sm:gap-1 border-2 border-indigo-400 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg">
                 <h1 className="text-[1.4rem] text-indigo-500 font-semibold sm:text-xl">
-                  Software Developer
+                  Frontend Developer
                 </h1>
                 <span className=" text-[.9rem] font-semibold text-gray-300 sm:text-base">
                   Morocco Digitals
                 </span>
                 <span className=" text-[.9rem] font-semibold text-indigo-400 sm:text-base">
-                  June 2023 - Present
+                  June 2020 - Present
                 </span>
                 <p className=" text-[.9rem] text-justify break-words text-gray-300">
-                During my ongoing internship at Morocco Digitals, I serve as a Full Stack Developer with a primary focus 
-                on backend development utilizing Java/SpringBoot. In addition to backend development, My responsibilities 
-                involve crafting interactive and user-friendly interfaces that enhance the overall user experience 
-                using React JS and TailwindCSS.
-                I play a key role in constructing the backend API, this involves facilitating data storage and 
-                retrieval processes, contributing to the seamless functionality of the application.
+                Led the design and development of high-impact marketing websites and web applications using React, Next.js, and Tailwind CSS, 
+                  ensuring responsive, accessible, and visually compelling user experiences. 
+                Spearheaded the development of a component library using Tailwind CSS, enhancing UI consistency and speeding up the 
+                  development process across projects.
+                Engaged in the full product lifecycle, from concept to deployment, focusing on creating intuitive and dynamic user 
+                  interfaces with a strong emphasis on user experience.
+                Utilized Flutter for building cross-platform mobile applications, extending the reach of web functionalities to mobile users.
                 </p>
               </div>
             </div>
@@ -73,20 +74,21 @@ const Resume = () => {
               {/* design */}
               <div className=" flex flex-col gap-1 border-2 border-indigo-400 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg">
                 <h1 className="text-[1.4rem] text-indigo-500 font-semibold sm:text-xl">
-                  Bsc Degree, Computer Science
+                  Master of Applied Computing: Offshoring
                 </h1>
                 <span className=" text-[.9rem] font-semibold text-gray-300 sm:text-base">
-                Goldsmiths, University of London 
+                Med5, University of Rabat 
                 </span>
                 <span className=" text-[.9rem] font-semibold text-indigo-400 sm:text-base">
-                  Year 2021 - Year 2025
+                  Year 2014 - Year 2016
                 </span>
                 <p className=" text-[.9rem] text-justify text-gray-300">
-                As an undergraduate student, I have a good understanding of web development technologies such as HTML, CSS, 
-                Tailwind CSS, JavaScript, and React JS. Additionally, I'm proficient in backend technologies such as Java, Node.js. 
-                I also have skills in C++, MySql, PostgreSQL and problem-solving using Data structures and Algorithms.
-                In the upcoming semester, we'll delve into the latest advancements in artificial intelligence and 
-                explore cutting-edge technologies.
+                With a Master's degree under my belt, I've honed a versatile skill set that spans across multiple programming languages and frameworks. 
+                  Proficient in JavaScript (ES6+), TypeScript, Java, and Python, I possess a solid foundation in software development. 
+                  My expertise extends to various frameworks and libraries including React, Next.js, Vite, Node.js, Flutter, GSAP, and 
+                  Framer Motion, enabling me to craft dynamic and interactive web and mobile applications. Additionally, 
+                  I excel in CSS and design, showcasing advanced proficiency in Tailwind CSS, CSS3 techniques, HTML5, responsive web design, 
+                  and adaptive layouts, ensuring optimal user experiences across diverse platforms and devices.
                 </p>
               </div>
             </div>
