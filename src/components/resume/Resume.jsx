@@ -38,7 +38,7 @@ const Resume = () => {
                   Frontend Developer
                 </h1>
                 <span className=" text-[.9rem] font-semibold text-gray-300 sm:text-base">
-                  Morocco Digitals
+                 Wbi.dev
                 </span>
                 <span className=" text-[.9rem] font-semibold text-indigo-400 sm:text-base">
                   June 2020 - Present
