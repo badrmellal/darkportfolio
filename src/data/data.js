@@ -11,9 +11,9 @@ export const data = [
   },
   {
     id: 2,
-    img: 'https://i.postimg.cc/XqbJMQFy/Screen-Shot-2024-01-25-at-9-58-42-AM.png',
-    title: "Tracker App",
-    link: "https://badrmellal-todos.netlify.app",
+    img: 'https://i.postimg.cc/gJ7nn0NR/Screen-Shot-2024-05-06-at-4-39-18-PM.png',
+    title: "Sourcing App",
+    link: "https://kuaisourcing.com",
     git: "",
   },
   {
