@@ -10,6 +10,7 @@ import { TypeAnimation } from "react-type-animation";
 import CvBadr from "../../assets/cvBadr.pdf";
 import IMG20231220210628 from "../../assets/IMG20231220210628.png";
 import circle from "../../assets/circle.png";
+import { FiDownload } from 'react-icons/fi';
 
 
 
