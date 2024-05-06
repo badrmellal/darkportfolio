@@ -11,7 +11,7 @@ export const data = [
   },
   {
     id: 2,
-    img: 'https://i.postimg.cc/gJ7nn0NR/Screen-Shot-2024-05-06-at-4-39-18-PM.png',
+    img: 'https://i.postimg.cc/3rDg2Mm7/Screen-Shot-2024-05-06-at-4-39-18-PM.png',
     title: "Sourcing App",
     link: "https://kuaisourcing.com",
     git: "",
