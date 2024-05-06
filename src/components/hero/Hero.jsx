@@ -5,7 +5,6 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaFacebook, FaLinkedinIn } from "react-icons/fa";
-import { FiDownload } from "react-icons/fi";
 import { FaPlay } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import CvBadr from "../../assets/cvBadr.pdf";
@@ -89,12 +88,7 @@ const Hero = () => {
                   <AiFillInstagram className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-125  " />{" "}
                 </a>
               </li>
-              <li>
-                <a href="https://web.facebook.com/badr.mel/">
-                  {" "}
-                  <FaFacebook className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-125  " />{" "}
-                </a>
-              </li>
+             
 
             </ul>
           </div>
